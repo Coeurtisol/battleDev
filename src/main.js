@@ -17,8 +17,7 @@ function fileParse() {
 function battle() {
   const cartes = fileParse();
   for (let i = 0; i < nbManche; i++) {
-    const A = +cartes[i].split(" ")[0];
-    const B = +cartes[i].split(" ")[1];
+    const [A, B] = cartes[i].split(" ").map(Number);
     if (A != B) {
       A > B ? scoreA++ : scoreB++;
     }

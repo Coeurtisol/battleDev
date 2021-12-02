@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --resetModules"
+    "test": "jest --resetModules",
+    "start": "node ./src/main"
   },
   "keywords": [],
   "author": "",
